@@ -1,0 +1,29 @@
+{
+  "name": "typed-english",
+  "version": "0.1.0",
+  "description": "TypeScript types for English grammar",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "pnpm typecheck && pnpm lint"
+  },
+  "keywords": [
+    "typescript",
+    "english",
+    "grammar",
+    "types"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "typescript": "^5.3.3"
+  }
+}
